@@ -20,8 +20,8 @@ exports.signin = async function(req, res, next){
           username,
           profileImageUrl
         },
-        // process.env.SECRET_KEY
-        "cfgvhbjnkm"
+        process.env.SECRET_KEY
+        
       );
       return res.status(200).json({
         id,
@@ -50,8 +50,8 @@ exports.signup = async function(req,res,next){
       username,
       profileImageUrl
       },
-      // process.env.SECRET_KEY
-      "cfgvhbjnkm"
+      process.env.SECRET_KEY
+      
     );
 
     return res.status(200).json({
